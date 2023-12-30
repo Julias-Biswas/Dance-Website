@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        title #{title}
+        block scripts
+            script(src='../static/script.js')
+        block style 
+            style 
+                include ../static/style.css
+                include ../static/media.css
+                include ../static/contactPage.css
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    body
+        nav#navbar
+            ul 
+                div#logo
+                    a(href="/")
+                        img(src="/img/logo.png" alt="Logo")
+                        | JDA                  
+                li #[a(href="/" ) Home]
+                li #[a(href="/" ) Services]
+                li #[a(href="/" ) About]
+                li #[a(href="/") Class Info]
+                li #[a(href="/contact" ) Contact Us]
+
+            a(href="javascript:void(0);" class="icon" onclick="showNavbar()") <i class="fa fa-bars"></i> 
+
+        block content
+
+        block footer 
+            footer#footer 
+                | Copyright &copy; JuliasDanceAcademy.com 2023, All Right Reserved

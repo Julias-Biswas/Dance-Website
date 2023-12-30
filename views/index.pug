@@ -1,0 +1,70 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title #{title}
+        style 
+            include ../static/style.css
+            include ../static/media.css
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    body 
+        nav#navbar
+            ul 
+                div#logo
+                    a(href="/")
+                        img(src="/img/logo.png" alt="Logo")
+                        | JDA                  
+                li #[a(href="/" ) Home]
+                li #[a(href="/" ) Services]
+                li #[a(href="/" ) About]
+                li #[a(href="/") Class Info]
+                li #[a(href="/" ) Contact Us]
+
+            a(href="javascript:void(0);" class="icon" onclick="showNavbar()") <i class="fa fa-bars"></i> 
+
+        section#introSection 
+            div.big Welcome to Julias's Dance Academy 
+            div.small Eat Dance Sleep Repeat 
+
+        section#missionSection 
+            h1 Our Mission
+            div.row
+                div.card
+                    h2 Dance Perfection
+                    div.card-box 
+                        div.card-img
+                            img(src="/img/1.png" alt="Card 1")
+                        div.card-content 
+                            p “Perfection” in the eyes of dancers is thinness as well as good health, great performance, and overall - the best dancer. 
+
+                div.card
+                    h2 Dance The Way You Like
+                    div.card-box 
+                        div.card-img
+                            img(src="/img/2.png" alt="Card 1")
+                        div.card-content 
+                            p It's pretty impossible to dance and stay in a bad mood. That's because dance is exercise and exercise releases endorphins.
+
+                div.card
+                    h2 Expert Teaching
+                    div.card-box 
+                        div.card-img
+                            img(src="/img/3.png" alt="Card 1")
+                        div.card-content 
+                            p Expert teachers are aware of what they are doing; they monitor and adjust their teaching behaviours to bring out the best in their students.
+
+        section#sponserSection 
+            h1 Our Sponsers
+            div#sponser
+                img(src="/img/logo1.png" alt="Sponser Image" class="sp-img")
+                img(src="/img/logo2.png" alt="Sponser Image" class="sp-img")
+                img(src="/img/logo3.png" alt="Sponser Image" class="sp-img")
+                img(src="/img/logo4.png" alt="Sponser Image" class="sp-img")
+
+        footer#footer 
+            | Copyright &copy; JuliasDanceAcademy.com 2023, All Right Reserved
+
+        script 
+            include ../static/script.js

@@ -1,0 +1,45 @@
+extends base.pug
+
+block content 
+    body 
+        div.container 
+            div#contact
+                h1 Contact Us
+                form(action="/contact" method="post")
+                    div.form-row 
+                        div.input-data 
+                            input(type="text" name="firstName", required)
+                            div.underline
+                            label(for="") First Name
+                        div.input-data 
+                            input(type="text" name="lastName", required)
+                            div.underline                            
+                            label(for="") Last Name
+
+                    div.form-row 
+                        div.input-data 
+                            input(type="email" name="email", required)
+                            div.underline
+                            label(for="") Email Address
+                        div.input-data 
+                            input(type="number" name="phoneNo", required)
+                            div.underline
+                            label(for="") Phone No
+
+                    div.form-row 
+                        div.input-data.textarea
+                            textarea(name="address" cols="30" rows="10" required)
+                            div.underline 
+                            label(for="") Write your address
+
+                    div.form-row 
+                        div.input-data.textarea
+                            textarea(name="message" cols="30" rows="10" required)
+                            div.underline 
+                            label(for="") Write your message
+
+                    div.form-row.submit-btn
+                        div.input-data 
+                            div.inner 
+                            input(type="button" value="Submit")
+

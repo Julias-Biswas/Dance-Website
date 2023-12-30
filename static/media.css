@@ -1,0 +1,57 @@
+@media screen and (max-width: 850px) {
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    #navbar ul li {
+        display: none;
+    }
+
+    #navbar .icon {
+        display: block;
+    }
+
+    #introSection div.big {
+        color: white;
+        font-size: 38px;
+        padding: 0px 10px 0px 10px;
+        text-align: center;
+    }
+
+    #missionSection {
+        width: 75%;
+        margin: 2px auto;
+    }
+
+    #missionSection .row {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    #sponserSection {
+        margin-top: 10px;
+        padding: 18px;
+    }
+
+    #sponser {
+        height: 70px;
+    }
+
+    #sponser .sp-img {
+        width: 50px;
+        height: 50px;
+        margin: 6px 9px;
+    }
+
+    #footer {
+        height: 51px;
+        text-align: center;
+    }
+
+}
